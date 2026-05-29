@@ -1,6 +1,6 @@
 {
   "name": "@allstak/nuxt",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Official AllStak SDK for Nuxt 3 / Nuxt 4 \u2014 error tracking, structured logs, distributed tracing, and observability for the client and the Nitro server.",
   "keywords": [
     "nuxt",

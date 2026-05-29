@@ -5,6 +5,16 @@ All notable changes to `@allstak/nuxt` are documented here.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.1.1] — 2026-05-30
+
+Maintenance release. No public API changes.
+
+### Changed
+
+- Refreshed the published build artifacts and confirmed the module resolves
+  against the current `@allstak/js` and `@allstak/vue` releases.
+- Tidied source comments and documentation wording.
+
 ## [0.1.0] — 2026-05-29
 
 Initial release of the official AllStak SDK for Nuxt 3 / Nuxt 4, shipped as a
@@ -52,4 +62,5 @@ Nuxt module built with `@nuxt/module-builder`.
 - The SDK version is injected at build time from `package.json`
   (`__ALLSTAK_NUXT_VERSION__`), never hand-written, so it cannot drift.
 
+[0.1.1]: https://github.com/AllStak/allstak-nuxt/releases/tag/v0.1.1
 [0.1.0]: https://github.com/AllStak/allstak-nuxt/releases/tag/v0.1.0
