@@ -1,0 +1,73 @@
+{
+  "name": "@allstak/nuxt",
+  "version": "0.1.0",
+  "description": "Official AllStak SDK for Nuxt 3 / Nuxt 4 \u2014 error tracking, structured logs, distributed tracing, and observability for the client and the Nitro server.",
+  "keywords": [
+    "nuxt",
+    "nuxt3",
+    "nuxt4",
+    "nuxt-module",
+    "nitro",
+    "observability",
+    "error-tracking",
+    "logging",
+    "monitoring",
+    "tracing",
+    "allstak"
+  ],
+  "type": "module",
+  "homepage": "https://allstak.sa",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AllStak/allstak-nuxt.git"
+  },
+  "bugs": "https://github.com/AllStak/allstak-nuxt/issues",
+  "license": "MIT",
+  "author": "AllStak <sdk@allstak.sa>",
+  "exports": {
+    ".": {
+      "types": "./dist/types.d.mts",
+      "import": "./dist/module.mjs"
+    }
+  },
+  "main": "./dist/module.mjs",
+  "types": "./dist/types.d.mts",
+  "files": [
+    "dist",
+    "README.md",
+    "CHANGELOG.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "prepack": "nuxt-module-build build",
+    "build": "nuxt-module-build build",
+    "typecheck": "nuxt-module-build prepare && tsc --noEmit -p .nuxt/tsconfig.json",
+    "test": "vitest run"
+  },
+  "peerDependencies": {
+    "nuxt": "^3.7.0 || ^4.0.0"
+  },
+  "peerDependenciesMeta": {
+    "nuxt": {
+      "optional": true
+    }
+  },
+  "dependencies": {
+    "@allstak/js": "^0.3.0",
+    "@allstak/vue": "^0.1.0",
+    "@nuxt/kit": "^3.7.0 || ^4.0.0"
+  },
+  "devDependencies": {
+    "@nuxt/module-builder": "^1.0.0",
+    "@types/node": "^22.0.0",
+    "nuxt": "^3.18.0",
+    "typescript": "^5.8.3",
+    "vitest": "^2.1.0",
+    "vue": "^3.4.0"
+  },
+  "publishConfig": {
+    "access": "public",
+    "provenance": true,
+    "registry": "https://registry.npmjs.org/"
+  }
+}

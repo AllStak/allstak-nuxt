@@ -1,0 +1,10 @@
+node_modules/
+dist/
+.nuxt/
+.output/
+.data/
+*.tsbuildinfo
+.DS_Store
+coverage/
+.npmrc
+*.log
