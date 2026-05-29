@@ -12,7 +12,7 @@ import type { AllStakConfig } from '@allstak/js';
  *     Nitro preset (node-server, edge, serverless).
  *   - `'top-level-import'`: in addition to the plugin, the module can be
  *     instructed (by the host build) to import the server config at the top
- *     of the Nitro entry. Surfaced for parity / forward compatibility.
+ *     of the Nitro entry. Surfaced for forward compatibility.
  *   - `'experimental_dynamic-import'`: wrap the Nitro entrypoint functions so
  *     the server SDK is imported dynamically before the handler runs.
  */
@@ -22,7 +22,7 @@ export type AutoInjectServerStrategy =
   | 'experimental_dynamic-import';
 
 /**
- * Source-map upload options surfaced for parity with the build-integration
+ * Source-map upload options surfaced for the build-integration
  * story. Upload itself is performed by `@allstak/js`'s source-map tooling /
  * the AllStak CLI against the AllStak source-map ingest endpoint; the module
  * threads these values through so a host can configure them in one place.

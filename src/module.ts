@@ -144,7 +144,7 @@ export default defineNuxtModule<AllStakModuleOptions>({
 
       // The `plugin` strategy is the portable default and is always wired so
       // the `error`/`render:html`/request-span hooks exist. The other two
-      // strategies are additive injection points surfaced for parity; the
+      // strategies are additive injection points; the
       // server plugin itself is idempotent (`ensureInit` guards double-init).
       addServerPlugin(resolver.resolve('./runtime/server/plugin'));
 
