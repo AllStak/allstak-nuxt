@@ -28,6 +28,17 @@
     ".": {
       "types": "./dist/types.d.mts",
       "import": "./dist/module.mjs"
+    },
+    "./client": {
+      "types": "./dist/runtime/client.d.ts",
+      "import": "./dist/runtime/client.js"
+    },
+    "./server": {
+      "types": "./dist/runtime/server.d.ts",
+      "import": "./dist/runtime/server.js"
+    },
+    "./package.json": {
+      "default": "./package.json"
     }
   },
   "main": "./dist/module.mjs",
